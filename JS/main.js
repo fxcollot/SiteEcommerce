@@ -29,3 +29,18 @@ function diapo(side) {
     
 }
 
+// Permet de signaler un achat
+function test() {
+    let xhttp3 = new XMLHttpRequest();
+    xhttp3.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+			alert('bonjour')
+        }
+    };
+    xhttp3.open('POST', '../PHP/test.php', true);
+	alert('bonjou')
+};
+
+
+
+

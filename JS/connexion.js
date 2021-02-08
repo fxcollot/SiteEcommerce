@@ -42,14 +42,12 @@ function inscription() {
         let xhttp5 = new XMLHttpRequest();
         xhttp5.onreadystatechange = function() {
             if (this.readyState == 4 && this.status == 200) {
-                console.log(xhttp5.responseText)
-                alert(xhttp5.responseText);
+                alert('bien joue')
             };
         };
         xhttp5.open('POST', '../PHP/inscription.php', true);
         xhttp5.send(Data);
-        alert('bien joue')
-        //quitter();
+        quitter();
     } else {
         msg = 'dommage';
     };

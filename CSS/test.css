@@ -8,11 +8,10 @@
     background-color: #455a64;
 }
 .footer h1 {
-    padding-top: 25px;
     text-align: center;
 }
 .footer .newsletter {
-    padding-top: 20px;
+    padding-top: 10px;
     margin-left: 35%;
     display: flex;
     align-items: center;

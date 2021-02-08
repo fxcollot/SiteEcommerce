@@ -4,7 +4,7 @@
 
 echo'<header class="header">
     <nav class="nav">
-        <a href="main.html" class="logo"> AmazonWish </a>
+        <a href="main.html" class="logo"> CODESS </a>
         <ul>
             <li><a href="store.html">STORE</a></li>
             <li><a href="blog.html">BLOG</a></li>

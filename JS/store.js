@@ -1,19 +1,19 @@
-var xhttp2 = new XMLHttpRequest();
-xhttp2.onreadystatechange = function() {
+var donnees;
+var api = new XMLHttpRequest();
+api.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-        document.getElementById('produit').innerHTML = xhttp2.responseText;
+        document.getElementById('produit').innerHTML = api.responseText;
     }
 };
-xhttp2.open("GET", "../PHP/store.php", true);
-xhttp2.send(); 
-
+api.open("GET", "../PHP/store.php", true);
+api.send();
 
 // Renvoie l'utilisateur vers une page contenant les caractéristiques du produit
 function produit(ID) {
 	console.log(ID);
     document.location = 'produit.html?ID=' +ID;
 }
-
+ 
 function selection() {
     let article = 0;
     if (document.getElementById('Vetements').checked == true) {
