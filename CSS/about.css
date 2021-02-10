@@ -4,7 +4,7 @@
 }
 
 .main .first {
-    background-color: lightblue;
+    background-color: #78909c;
     height: 80vh;
 }
 .main .first h1 {
@@ -35,7 +35,28 @@
     margin-left: 10%;
 }
 
+
 .main .third {
-    background-color: blue;
-    height: 80vh;
+    background-color:#78909c;
+    height: 105vh;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+.main .third .about {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.main .third .about p {
+    overflow-wrap: break-word;
+    margin-left: 150px;
+    margin-top: 60px;
+    width: 40%;
+}
+.main .third .about .img {
+    width: 150px;
+    height: 150px;
+    /*background-color: black;*/
+    margin-right: 150px;
+    margin-top: 50px;
 }
