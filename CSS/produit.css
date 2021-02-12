@@ -4,7 +4,7 @@
 }
 
 .main {
-    height: 150vh;
+    height: 160vh;
     width: 100%-250px;
 } 
 .ecran {
@@ -82,9 +82,11 @@
     font-size: 23px;
     height: 50vh;
     width: 100%;
+    overflow: auto;
 }
 .main .description h1 {
     margin-bottom: 25px;
+    
 }
 .main .description h5 {
     margin-left: 50px;
