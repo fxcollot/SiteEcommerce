@@ -10,11 +10,13 @@ if (!isset($_SESSION["PANIER"])) {
     $_SESSION["PANIER"] = [];
 }
 
-$bdd = new PDO('mysql:host=localhost;dbname=website', 'root', 'root');
-$rep = $bdd->query('SELECT * FROM produits WHERE ID = '. $produit);
-$donnee = $rep->fetch();
+$api = file_get_contents('https://api.api2cart.com/v1.1/product.list.json?start=0&count=50&api_key=4818b589810aa7b9bebc37693baa7ff3&store_key=ed58a22dfecb405a50ea3ea56979360d');
 
-array_push($_SESSION["PANIER"], $donnee["Produit"]);
+$api = json_decode($api, true);
+
+$donnee = $api['result']['product'][$produit]['name'];
+
+array_push($_SESSION["PANIER"], $donnee);
 
 
 
